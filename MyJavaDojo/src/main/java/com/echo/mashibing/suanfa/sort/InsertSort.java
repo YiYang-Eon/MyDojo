@@ -15,10 +15,15 @@ public class InsertSort {
         }
         int N = arr.length;
         for (int end = 1; end < N; end++) {
-            int newIndex = end;
-            while (newIndex - 1 >= 0 && arr[newIndex - 1] > arr[newIndex]) {
-                swap(arr, newIndex - 1, newIndex);
-                newIndex--;
+//            方式1
+//            int newIndex = end;
+//            while (newIndex - 1 >= 0 && arr[newIndex - 1] > arr[newIndex]) {
+//                swap(arr, newIndex - 1, newIndex);
+//                newIndex--;
+//            }
+            // 方式2
+            for (int pre = end - 1; pre >= 0 && arr[pre] > arr[pre + 1]; pre--) {
+                swap(arr, pre, pre + 1);
             }
         }
     }
