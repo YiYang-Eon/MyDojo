@@ -1,4 +1,4 @@
-package com.echo.mashibing.suanfa.sort;
+package com.echo.mashibing.suanfa._001sort;
 
 import java.util.Arrays;
 
